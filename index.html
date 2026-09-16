@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>روابط مؤسسة تنامي ترين للتدريب والاستشارات</title>
-    <!-- استدعاء خط المراعي (Almarai) ليتناسب مع الهوية -->
+    <!-- خط المراعي المعتمد للهوية -->
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- استدعاء أيقونات FontAwesome -->
+    <!-- مكتبة الأيقونات FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0b1f17; /* خلفية خضرآء داكنة متناسقة مع الشعار */
+            background-color: #0b1f17; /* أخضر داكن رئيسي */
             color: #f3f4f6;
             font-family: 'Almarai', sans-serif;
             display: flex;
@@ -29,119 +29,178 @@
 
         .container {
             width: 100%;
-            max-width: 450px;
+            max-width: 480px;
             text-align: center;
             background: #0f2a20;
-            padding: 30px 20px;
-            border-radius: 20px;
-            border: 1px solid #d4af37; /* إطار ذهبي رفيع وأنيق */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 35px 25px;
+            border-radius: 24px;
+            border: 1px solid #d4af37; /* إطار ذهبي فاخر */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
         }
 
-        /* تنسيق اللوغو الجديد */
+        /* تنسيق الشعار */
         .logo-container {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .logo-img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             object-fit: cover;
             border-radius: 50%;
-            border: 3px solid #d4af37; /* إطار ذهبي للوغو */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid #d4af37;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
         }
 
         h1 {
-            font-size: 1.25rem;
-            color: #d4af37; /* لون ذهبي لاسم المؤسسة */
-            margin-bottom: 8px;
+            font-size: 1.35rem;
+            color: #d4af37;
+            margin-bottom: 5px;
             font-weight: 800;
         }
 
         p.subtitle {
             font-size: 0.9rem;
             color: #cbd5e1;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            font-weight: 400;
         }
 
-        /* تنسيق الأزرار والروابط */
+        /* قائمة الروابط الاحترافية */
         .links-list {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 14px;
         }
 
         .btn-link {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
+            justify-content: space-between;
             background-color: #133b2c;
-            color: #d4af37; /* نص ذهبي */
-            border: 2px solid #d4af37;
+            color: #ffffff;
+            border: 2px solid #1c4e3b;
             padding: 14px 20px;
-            border-radius: 12px;
+            border-radius: 14px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         .btn-link:hover {
             background-color: #d4af37;
-            color: #0b1f17; /* عكس الألوان عند مرور الماوس لتفاعل جذاب */
+            color: #0b1f17;
+            border-color: #d4af37;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
         }
 
-        .btn-link i {
-            font-size: 1.2rem;
+        .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
-        /* حقوق النشر */
+        .btn-link i.icon-left {
+            font-size: 0.9rem;
+            color: #d4af37;
+            transition: color 0.3s ease;
+        }
+
+        .btn-link:hover i.icon-left {
+            color: #0b1f17;
+        }
+
+        .btn-link i.main-icon {
+            font-size: 1.25rem;
+            color: #d4af37;
+            width: 24px;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .btn-link:hover i.main-icon {
+            color: #0b1f17;
+        }
+
+        /* تنسيق خاص لزر التطبيق ليكون مميزاً بارزاً */
+        .btn-highlight {
+            background: linear-gradient(135deg, #133b2c 0%, #1a4d3a 100%);
+            border: 2px solid #d4af37;
+        }
+
         .footer {
-            margin-top: 30px;
+            margin-top: 25px;
             font-size: 0.8rem;
             color: #94a3b8;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- قسم اللوغو -->
+        <!-- الشعار -->
         <div class="logo-container">
-            <!-- تأكد من تطابق اسم ملف الصورة هنا، إذا كانت logo.png قم بتغيير اللاحقة -->
-            <img src="logo.jpg" alt="مؤسسة تنامي ترين للتدريب والاستشارات" class="logo-img">
+            <img src="logo.jpg" alt="مؤسسة تنامي ترين" class="logo-img">
         </div>
         
         <h1>مؤسسة تنامي ترين</h1>
         <p class="subtitle">للتدريب والاستشارات</p>
 
-        <!-- قائمة الروابط -->
+        <!-- الأزرار والروابط -->
         <div class="links-list">
-            <!-- زر تحميل التطبيق المباشر من متجر غوغل بلاي -->
-            <a href="https://play.google.com/store/apps/details?id=com.tanamitrain&hl=ar" target="_blank" class="btn-link">
-                <i class="fab fa-google-play"></i>
-                تحميل التطبيق من Google Play
+            <!-- رابط تطبيق جوجل بلاي (بارز) -->
+            <a href="https://play.google.com/store/apps/details?id=com.tanamitrain&hl=ar" target="_blank" class="btn-link btn-highlight">
+                <div class="btn-content">
+                    <i class="fab fa-google-play main-icon"></i>
+                    <span>تحميل التطبيق من Google Play</span>
+                </div>
+                <i class="fas fa-chevron-left icon-left"></i>
             </a>
 
-            <!-- يمكنك إضافة روابط إضافية هنا بنفس الشكل -->
-            <a href="https://tanamitrain.github.io/" target="_blank" class="btn-link">
-                <i class="fas fa-globe"></i>
-                الموقع الرسمي للمؤسسة
+            <!-- الموقع الرسمي -->
+            <a href="https://tanamitrain.com/" target="_blank" class="btn-link">
+                <div class="btn-content">
+                    <i class="fas fa-globe main-icon"></i>
+                    <span>الموقع الرسمي للمؤسسة</span>
+                </div>
+                <i class="fas fa-chevron-left icon-left"></i>
             </a>
 
-            <a href="https://wa.me/" target="_blank" class="btn-link">
-                <i class="fab fa-whatsapp"></i>
-                تواصل عبر واتساب
+            <!-- قناة واتساب -->
+            <a href="https://wa.me/992293006" target="_blank" class="btn-link">
+                <div class="btn-content">
+                    <i class="fab fa-whatsapp main-icon"></i>
+                    <span>قناة ومجموعة واتساب</span>
+                </div>
+                <i class="fas fa-chevron-left icon-left"></i>
+            </a>
+
+            <!-- صفحة الفيسبوك -->
+            <a href="https://www.facebook.com/" target="_blank" class="btn-link">
+                <div class="btn-content">
+                    <i class="fab fa-facebook main-icon"></i>
+                    <span>صفحتنا على فيسبوك</span>
+                </div>
+                <i class="fas fa-chevron-left icon-left"></i>
+            </a>
+
+            <!-- قناة التلغرام -->
+            <a href="https://t.me/" target="_blank" class="btn-link">
+                <div class="btn-content">
+                    <i class="fab fa-telegram main-icon"></i>
+                    <span>قناة التلغرام الرسمية</span>
+                </div>
+                <i class="fas fa-chevron-left icon-left"></i>
             </a>
         </div>
 
         <div class="footer">
-            &copy; 2026 تنامي ترين. جميع الحقوق محفوظة.
+            جميع الحقوق محفوظة &copy; 2026 تنامي ترين
         </div>
     </div>
 
