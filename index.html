@@ -1,54 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>مؤسسة تنامي ترين</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابط مؤسسة تنامي ترين للتدريب والاستشارات</title>
+    <!-- استدعاء خط المراعي (Almarai) ليتناسب مع الهوية -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- استدعاء أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: #1a1a1a;
-            color: #0f382b;
-            font-family: 'Tahoma', sans-serif;
+            background-color: #0b1f17; /* خلفية خضرآء داكنة متناسقة مع الشعار */
+            color: #f3f4f6;
+            font-family: 'Almarai', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
             text-align: center;
+            background: #0f2a20;
             padding: 30px 20px;
+            border-radius: 20px;
+            border: 1px solid #d4af37; /* إطار ذهبي رفيع وأنيق */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-        img.logo {
-            max-width: 200px;
-            margin-bottom: 20px;
+
+        /* تنسيق اللوغو الجديد */
+        .logo-container {
+            margin-bottom: 25px;
         }
+
+        .logo-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #d4af37; /* إطار ذهبي للوغو */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
         h1 {
-            color: #d4af37;
+            font-size: 1.25rem;
+            color: #d4af37; /* لون ذهبي لاسم المؤسسة */
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        p.subtitle {
+            font-size: 0.9rem;
+            color: #cbd5e1;
             margin-bottom: 30px;
         }
-        .link {
-            display: block;
-            background-color: #333;
-            color: #fff;
-            border: 2px solid #d4af37;
-            border-radius: 12px;
-            padding: 15px;
-            margin: 10px auto;
-            width: 90%;
-            max-width: 400px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
+
+        /* تنسيق الأزرار والروابط */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
-        .link:hover {
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background-color: #133b2c;
+            color: #d4af37; /* نص ذهبي */
+            border: 2px solid #d4af37;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-link:hover {
             background-color: #d4af37;
-            color: #000;
+            color: #0b1f17; /* عكس الألوان عند مرور الماوس لتفاعل جذاب */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-link i {
+            font-size: 1.2rem;
+        }
+
+        /* حقوق النشر */
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #94a3b8;
         }
     </style>
 </head>
 <body>
-    <img src="لوغو-20235.png" alt="شعار تنامي ترين" class="logo" />
-    <h1>مؤسسة تنامي ترين للتدريب و الاستشارات</h1>
-    <a class="link" href="http://tanamitrain.com/" target="_blank">🌐 الموقع الإلكتروني</a>
-    <a class="link" href="https://www.instagram.com/tanami.train" target="_blank">📸 إنستغرام</a>
-  <a href="https://play.google.com/store/apps/details?id=com.tanamitrain&hl=ar" target="_blank" class="play-store-btn">
-    تحميل تطبيق تنامي ترين من Google Play
-    <a class="link" href="https://www.facebook.com/tanami.train" target="_blank">📘 فيسبوك</a>
-    <a class="link" href="https://whatsapp.com/channel/0029VaAySIQ84OmFIvyBNK1Y" target="_blank">💬 قناة واتساب</a>
-    <a class="link" href="tel:+963992293006">📞 خدمة العملاء: +963992293006</a>
+
+    <div class="container">
+        <!-- قسم اللوغو -->
+        <div class="logo-container">
+            <!-- تأكد من تطابق اسم ملف الصورة هنا، إذا كانت logo.png قم بتغيير اللاحقة -->
+            <img src="logo.jpg" alt="مؤسسة تنامي ترين للتدريب والاستشارات" class="logo-img">
+        </div>
+        
+        <h1>مؤسسة تنامي ترين</h1>
+        <p class="subtitle">للتدريب والاستشارات</p>
+
+        <!-- قائمة الروابط -->
+        <div class="links-list">
+            <!-- زر تحميل التطبيق المباشر من متجر غوغل بلاي -->
+            <a href="https://play.google.com/store/apps/details?id=com.tanamitrain&hl=ar" target="_blank" class="btn-link">
+                <i class="fab fa-google-play"></i>
+                تحميل التطبيق من Google Play
+            </a>
+
+            <!-- يمكنك إضافة روابط إضافية هنا بنفس الشكل -->
+            <a href="https://tanamitrain.github.io/" target="_blank" class="btn-link">
+                <i class="fas fa-globe"></i>
+                الموقع الرسمي للمؤسسة
+            </a>
+
+            <a href="https://wa.me/" target="_blank" class="btn-link">
+                <i class="fab fa-whatsapp"></i>
+                تواصل عبر واتساب
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 تنامي ترين. جميع الحقوق محفوظة.
+        </div>
+    </div>
+
 </body>
 </html>
